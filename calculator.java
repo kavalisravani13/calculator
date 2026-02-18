@@ -1,47 +1,14 @@
-import java.util.Scanner;
-
-public class calculator {
+class calculator {
     public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
-        double num1, num2, result;
-        char operator;
-
-        // Prompt the user to enter two numbers
-        System.out.println("Enter two numbers:");
-        num1 = scanner.nextDouble();
-        num2 = scanner.nextDouble();
-
-        // Prompt the user to enter an operator
-        System.out.println("Enter an operator (+, -, *, /):");
-        operator = scanner.next().charAt(0);
-
-        // Perform the calculation based on the operator
-        switch (operator) {
-            case '+':
-                result = num1 + num2;
-                System.out.println(num1 + " + " + num2 + " = " + result);
-                break;
-            case '-':
-                result = num1 - num2;
-                System.out.println(num1 + " - " + num2 + " = " + result);
-                break;
-            case '*':
-                result = num1 * num2;
-                System.out.println(num1 + " * " + num2 + " = " + result);
-                break;
-            case '/':
-                if (num2 == 0) {
-                    System.out.println("Error! Division by zero is not allowed.");
-                    return; // Exit the program
-                }
-                result = num1 / num2;
-                System.out.println(num1 + " / " + num2 + " = " + result);
-                break;
-            default:
-                System.out.println("Error! Invalid operator.");
-                return; // Exit the program
-        }
-
-        scanner.close(); // Close the scanner object
+        int n1=Integer.parseInt(args[0]);
+        int n2=Integer.parseInt(args[1]);
+        int r1=n1+n2;
+        int r2=n1-n2;
+        int r3=n1*n2;
+        int r4=n1/n2;
+        System.out.println("Addition:"+r1);
+        System.out.println("subtraction:"+r2);
+        System.out.println("Multiplication:"+r3);
+        System.out.println("Division:"+r4);
     }
 }
