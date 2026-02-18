@@ -1,7 +1,8 @@
-a=int(input("enter a variable"))
-b=int(input("enter b variable"))
-print("Addition:",a+b)
-print("Subtraction:",a-b)
-print("Multiplication:",a*b)
-print("Division:",a/b)
+import sys
+n1=int(sys.argv[1])
+n2=int(sys.argv[2])
+print("Addition:",n1+n1)
+print("Subtraction:",n1-n2)
+print("Multiplication:",n1*n2)
+print("Division:",n1/n2)
 
