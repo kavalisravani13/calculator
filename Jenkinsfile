@@ -8,17 +8,17 @@ pipeline{
 }
 stgae('compile'){
 steps{
- sh 'javac Calculator.java'
+ sh 'javac calculator.java'
 }
 }
 stage('build'){
-steps{
-sh 'javacCalculator 25 5'
+steps{py
+sh 'javac calculator 25 5'
 }
 }
 stgae('test'){
 steps{
- sh 'javac Calculator 30 -5'
+ sh 'javac calculator 30 -5'
 }
 }
 stage('Deploy'){
